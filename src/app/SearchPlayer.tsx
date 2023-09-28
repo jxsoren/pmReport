@@ -98,7 +98,7 @@ const SearchPlayer = () => {
           </h2>
           <h2>{playerData.bungieNetMembershipId}</h2>
           <Image
-            src={playerData.profilePicturePath}
+            src={`https://www.bungie.net/${playerData.profilePicturePath}`}
             alt="profileImage"
             height={200}
             width={200}
