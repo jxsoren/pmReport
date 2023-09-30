@@ -71,7 +71,7 @@ const SearchPlayer = () => {
         return null;
       });
 
-      console.log(playerData);
+      console.log(`Player Data: ${playerData}`);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -91,7 +91,7 @@ const SearchPlayer = () => {
         <button onClick={searchPlayer}>Search</button>
       </div>
 
-      {playerData && (
+      {playerData && playerData.profilePicturePath && (
         <div>
           <h2>
             {`${playerData.bungieGlobalDisplayName} #${playerData.bungieGlobalDisplayNameCode}`}
